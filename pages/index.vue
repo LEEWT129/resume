@@ -68,7 +68,7 @@
 }
 .summary {
     color: var(--secondary-color);
-    margin: 20px 0;
+    margin: 30px 0 0 0;
 }
 }
 </style>

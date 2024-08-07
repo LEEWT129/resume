@@ -1,3 +1,5 @@
 <template>
-    <div>作品</div>
+    <div>
+        <ProjectCard />
+    </div>
 </template>
