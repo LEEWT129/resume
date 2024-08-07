@@ -26,7 +26,7 @@
       我是李偉婷，擁有積極學習態度、優秀邏輯思維和出色人際溝通能力。
       對於網頁撰寫有極大興趣~
     </div>
-    <catalog></catalog>
+    <Catalog />
   </div>
 </template>
 
