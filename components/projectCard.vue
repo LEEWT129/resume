@@ -1,6 +1,5 @@
 <template>
-  <div class="card-container">
-    <div class="card" v-for="card in cards" :key="card.id">
+    <div class="card">
       <div class="card-img">
         <img :src="card.imgSrc" alt="Card Image" class="img" />
       </div>
@@ -17,11 +16,16 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+
+const props = defineProps({
+  card: {
+    type: Object,
+  }
+});
 
 // Define your card data
 const cards = ref([
@@ -53,11 +57,7 @@ const cards = ref([
 </script>
 
 <style lang="scss" scoped>
-.card-container {
-  display: flex;
-  flex-wrap: wrap; // Allows cards to wrap to the next line
-  gap: 1rem; // Adds space between cards
-  justify-content: space-between; // Distributes space between cards
+
   .card {
     border-radius: 10px;
     overflow: hidden;
@@ -110,5 +110,4 @@ height: auto;
       }
     }
   }
-}
 </style>

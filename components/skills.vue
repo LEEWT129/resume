@@ -43,7 +43,7 @@ const FrontEndSkillsList = [
   "RWD",
 ];
 const BackEndSkillsList = ["Node.js", "MySQL", "PHP"];
-const Tools = ["Git版控", "Docker部署", "Photoshop", "Figma"];
+const Tools = ["Git 版控", "Docker 部署", "Photoshop", "Figma"];
 </script>
 
 <style lang="scss" scoped>
