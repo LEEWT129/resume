@@ -83,6 +83,7 @@ const handleClick = (key) => {
         letter-spacing: 5px;
         width: 100px;
         height: 50px;
+        font-size: 16px;
       }
     }
   }
