@@ -50,6 +50,8 @@ const Tools = ["Git 版控", "Docker 部署", "Photoshop", "Figma"];
 .skills-container {
   display: flex;
   gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 
   .skill-section {
     flex: 1;
@@ -70,6 +72,22 @@ const Tools = ["Git 版控", "Docker 部署", "Photoshop", "Figma"];
   .section-title {
     margin-bottom: 10px;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+
+    .skill-section-container {
+      flex-direction: column;
+      width: 100%;
+
+      .skill-section {
+        margin-bottom: 5px;
+        box-shadow: none; 
+      }
+    }
   }
 }
 </style>

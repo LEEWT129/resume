@@ -36,9 +36,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin:30px;
+  width: 100%;
   .resume {
     display: flex;
+    margin-top: 20px;
     .my-image {
       img {
         width: 200px;
@@ -71,4 +72,26 @@
     margin: 30px 0 0 0;
 }
 }
+
+@media (max-width: 768px) {
+  .container {
+    .resume {
+      flex-direction: column; 
+      .my-image {
+        margin: 20px 0; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .detail {
+        margin-left: 0;
+        text-align: center; 
+      }
+    }
+  }
+  .summary {
+padding: 10px;
+  }
+  }
 </style>

@@ -10,7 +10,7 @@
           <a :href="card.link1" class="card-display" target="_blank">
             <i class="fa-solid fa-display"></i>
           </a>
-          <a :href="card.link2" class="card-display" target="_blank">
+          <a v-if="card.link2" :href="card.link2" class="card-display" target="_blank">
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
@@ -27,7 +27,6 @@ const props = defineProps({
   }
 });
 
-// Define your card data
 const cards = ref([
   {
     id: 1,
@@ -65,12 +64,11 @@ const cards = ref([
     width: 180px;
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 10px;
     .card-img {
-      height: 100px;
       .img {
         width: 100%;
-height: auto;
+        height: 120px;
         display: block;
         object-fit: cover;
       }
@@ -82,7 +80,7 @@ height: auto;
       flex-direction: column;
       text-align: center;
       .card-title {
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 10px;
         font-size: 20px;
         font-weight: 600;

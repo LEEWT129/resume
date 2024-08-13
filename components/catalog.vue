@@ -55,23 +55,34 @@ const handleClick = (key) => {
       color: rgb(255, 255, 255);
       cursor: pointer;
       position: relative;
-      
+
       &.active::after {
         content: "";
         position: absolute;
-        bottom: -10px;;
+        bottom: -10px;
         left: 0;
         width: 100%;
         height: 5px;
-        background-color: var(--accent-color); 
-        border-radius: 2px; 
+        background-color: var(--accent-color);
+        border-radius: 2px;
       }
 
       &:hover {
         font-weight: 800;
-        font-size: 24px;
         background-color: var(--accent-color);
         color: var(--primary-color);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .catalog-btn {
+      button {
+        letter-spacing: 5px;
+        width: 100px;
+        height: 50px;
       }
     }
   }

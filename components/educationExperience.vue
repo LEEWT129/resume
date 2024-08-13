@@ -6,19 +6,19 @@
         <div class="education-item">
           <div>資策會-中區</div>
           <div>前端工程師</div>
-          <div>就業養成班</div>
+          <div class="status">就業養成班</div>
           <div>2023/05~2023/10</div>
         </div>
         <div class="education-item">
           <div>國立臺中科技大學</div>
           <div>企業管理系</div>
-          <div>二技畢業</div>
+          <div class="status">二技畢業</div>
           <div>2018/09~2020/06</div>
         </div>
         <div class="education-item">
           <div>國立臺中科技大學</div>
           <div>國際貿易與經營科</div>
-          <div>五專畢業</div>
+          <div class="status">五專畢業</div>
           <div>2013/09~2018/06</div>
         </div>
       </div>
@@ -43,9 +43,12 @@
 
 <style lang="scss" scoped>
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
   .education {
+    padding: 10px;
     .title {
       border-bottom: 2px solid var(--secondary-color);
       padding-bottom: 10px;
@@ -68,7 +71,7 @@
   }
 
   .experience {
-    margin-top: 20px;
+    padding: 10px;
     .title {
       border-bottom: 2px solid var(--secondary-color);
       padding-bottom: 10px;
@@ -84,6 +87,23 @@
       }
       div {
         text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    .education {
+      .education-content {
+        .education-item {
+          grid-template-columns: 1fr 1fr 1fr;
+          .status {
+            display: none;
+          }
+        }
       }
     }
   }
