@@ -43,8 +43,16 @@ const cards = ref([
     id: 'mingtie',
     imgSrc: "/images/mingtie.png",
     title: "公司專案-名帖(電子名片)",
-    text: "前端獨立開發，使用者前後台，RWD (3個月開發)",
+    text: "NUXT3前端開發，使用者前後台，RWD (3個月開發)",
     link1: "https://mingtie.lale.im/_mingtie/",
+  },
+  {
+    id: 'card',
+    imgSrc: "/images/card-game.png",
+    title: "翻牌配對小遊戲",
+    text: "React 撰寫簡易小遊戲",
+    link1: "https://card-game-ten-rho.vercel.app/",
+    link2: "https://github.com/LEEWT129/card-game",
   },
 ]);
 </script>
