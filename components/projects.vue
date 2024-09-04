@@ -13,7 +13,6 @@ const cards = ref([
     title: "履歷",
     text: "NUXT3製作履歷介面，RWD",
     link1: "https://resume-nine-phi.vercel.app/",
-    link2: "https://github.com/LEEWT129/resume",
   },
   {
     id: 'todoList',
@@ -52,7 +51,13 @@ const cards = ref([
     title: "翻牌配對小遊戲",
     text: "React 撰寫簡易小遊戲",
     link1: "https://card-game-ten-rho.vercel.app/",
-    link2: "https://github.com/LEEWT129/card-game",
+  },
+  {
+    id: 'snake',
+    imgSrc: "/images/snake.png",
+    title: "貪吃蛇小遊戲",
+    text: "Vue 撰寫簡易小遊戲",
+    link1: "https://snake-game-two-mu.vercel.app/",
   },
 ]);
 </script>
